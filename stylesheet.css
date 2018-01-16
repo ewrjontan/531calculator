@@ -117,6 +117,8 @@ label{
   max-width: 800px;
   justify-content: space-around;
   padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
