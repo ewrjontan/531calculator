@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<title>531 Calculator</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    	<link type = 'text/css' rel = 'stylesheet' href = 'stylesheet.css'/>
+    	<script src="https://use.fontawesome.com/a037c8550a.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	</head>
+
+    <body>
+  <div id="main-title-container">
+    <div id="title-container">
+    <h1>531 Calculator</h1>
+    </div>
+  </div>
+  
+  <div id="main-form-container">
+    <h1 id="enter-lifts-header">Enter Your Lifts</h1>
+    
+    <form id="input-form" action="">
+      <div class="FormInputs" id="weight-rep-placeholder">
+        <div id="placeholder"></div>
+        <p class="InputLabel">Weight</p>
+        <p class="InputLabel">Reps</p>
+      </div>
+    
+      <div class="FormInputs">
+        <label for="squat">Squat:</label>
+        <input type="text" name="squat weight" maxlength="3" id="squat-input-weight">
+        <input type="text" name="squat reps" maxlength="3" id="squat-input-reps">
+      </div>
+      
+      <div class="FormInputs">
+        <label for="bench">Bench Press:</label>
+        <input type="text" name="bench weight" maxlength="3" id="bench-input-weight">
+        <input type="text" name="bench reps" maxlength="3" id="bench-input-reps">
+      </div>
+      
+      <div class="FormInputs">
+        <label for="deadlift">Deadlift:</label>
+        <input type="text" name="deadlift weight" maxlength="3" id="deadlift-input-weight">
+        <input type="text" name="deadlift reps" maxlength="3" id="deadlift-input-reps">
+      </div>
+      
+      <div class="FormInputs">
+        <label for="ohp">Overhead Press:</label>
+        <input type="text" name="ohp weight" maxlength="3" id="ohp-input-weight">
+        <input type="text" name="ohp reps" maxlength="3" id="ohp-input-reps">
+      </div>
+      
+    </form>
+    
+    <div id="button-container">
+      <div id="calculate-button">
+        <p id="button-text">
+          Calculate
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="results-main-container">
+    <div id="max-lifts-container-main">
+      <h1 id="max-lifts-header">Estimated One (1) Rep Max</h1>
+      
+      <div id="max-lifts-container">
+      
+        <div id="squat-max-container"></div>
+
+        <div id="bench-max-container"></div>
+
+        <div id="deadlift-max-container"></div>
+
+        <div id="ohp-max-container"></div>
+      </div>
+    </div>
+  
+  
+    <table class="ResultsTable" id="results-table-week-one">
+      <thead>
+        <tr><th colspan="4">Week One - 3 sets of 5 reps</th></tr>
+      </thead>  
+      
+      <tr>
+        <td>Exercise</td>
+        <td>65%</td>
+        <td>75%</td>
+        <td>85%</td>
+      </tr>
+      
+      <tr id="squat-week-one-tr"></tr>
+      
+      <tr id="bench-week-one-tr"></tr>
+      
+      <tr id="deadlift-week-one-tr"></tr>
+      
+      <tr id="ohp-week-one-tr"></tr>
+    </table>
+    
+    <table class="ResultsTable" id="results-table-week-two">
+      <thead>
+        <tr><th colspan="4">Week Two - 3 sets of 3 reps</th></tr>
+      </thead>  
+      
+      <tr>
+        <td>Exercise</td>
+        <td>70%</td>
+        <td>80%</td>
+        <td>90%</td>
+      </tr>
+      
+      <tr id="squat-week-two-tr"></tr>
+      
+      <tr id="bench-week-two-tr"></tr>
+      
+      <tr id="deadlift-week-two-tr"></tr>
+      
+      <tr id="ohp-week-two-tr"></tr>
+    </table>
+    
+    <table class="ResultsTable" id="results-table-week-three">
+      <thead>
+        <tr><th colspan="4">Week Three - 3 sets of 5, 3, 1 reps</th></tr>
+      </thead>  
+      
+      <tr>
+        <td>Exercise</td>
+        <td>75%</td>
+        <td>85%</td>
+        <td>95%</td>
+      </tr>
+      
+      <tr id="squat-week-three-tr"></tr>
+      
+      <tr id="bench-week-three-tr"></tr>
+      
+      <tr id="deadlift-week-three-tr"></tr>
+      
+      <tr id="ohp-week-three-tr"></tr>
+    </table>
+    
+    <table class="ResultsTable" id="results-table-week-two">
+      <thead>
+        <tr><th colspan="4">Week Four - 3 sets of 5 reps</th></tr>
+      </thead>  
+      
+      <tr>
+        <td>Exercise</td>
+        <td>40%</td>
+        <td>50%</td>
+        <td>60%</td>
+      </tr>
+      
+      <tr id="squat-week-four-tr"></tr>
+      
+      <tr id="bench-week-four-tr"></tr>
+      
+      <tr id="deadlift-week-four-tr"></tr>
+      
+      <tr id="ohp-week-four-tr"></tr>
+    </table>
+    
+  </div>
+  
+  
+  
+  
+  
+</body>
+
+
+
+</html>    
