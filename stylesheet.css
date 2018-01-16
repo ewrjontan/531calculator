@@ -114,6 +114,7 @@ label{
   display: flex;
   flex-direction: row;
   width: 100%;
+  max-width: 800px;
   justify-content: space-around;
   padding-bottom: 25px;
 }
@@ -121,7 +122,8 @@ label{
 
 .ResultsTable{
     border-collapse: collapse;
-    width: 90%;
+    width: 100%;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
