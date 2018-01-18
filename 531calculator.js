@@ -140,7 +140,7 @@ $(document).ready(function(){
     console.log("ohp inputs: " + ohpWeight + " " + ohpReps);*/
     
     clear_Results();
-    $("#results-main-container").css("display", "inline");
+    $("#results-main-container").css("display", "inline-block");
     calculate();
     
   })
