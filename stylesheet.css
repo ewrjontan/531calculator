@@ -54,7 +54,8 @@ body{
   text-align: center;
   background-color: none;
   position: absolute;
-  top:35%;/*was 45%*/
+  top:25%;/*was 45%*/
+  font-size: 1.5em;
 }
 
 #main-body-container{
@@ -213,7 +214,8 @@ tr:hover {
   }
   
   #title-container{
-    top: 40%;
+    top: 30%;
+    font-size: 2em;
   }
 }
 
@@ -224,5 +226,10 @@ tr:hover {
   
   #main-title-container{
     height: 500px;/*was 250px*/
+  }
+  
+  #title-container{
+    top: 30%;
+    font-size: 2.5em;
   }
 }
