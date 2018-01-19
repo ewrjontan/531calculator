@@ -141,7 +141,7 @@ label{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
+  display: none;
   background-color: none;
 }
 
@@ -213,7 +213,16 @@ tr:hover {
   }
   
   #title-container{
-    background-color: red;
     top: 40%;
+  }
+}
+
+@media only screen and (min-width: 900px){ 
+  #main-title-container:before {
+    height: 500px
+  }
+  
+  #main-title-container{
+    height: 500px;/*was 250px*/
   }
 }
