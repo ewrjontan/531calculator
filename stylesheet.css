@@ -27,7 +27,7 @@ body{
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   z-index: -10;
   background: url("http://www.platinumfitnessaz.com/wp-content/uploads/2017/01/bar-powder.jpg") no-repeat center center;
   -webkit-background-size: cover !important;
@@ -141,7 +141,7 @@ label{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
+  display: none;
   background-color: none;
 }
 
@@ -203,11 +203,11 @@ tr:hover {
 }
 
 /*xxxxxxxxxxxxxxxxxxxx Responsive xxxxxxxxxxxxxxxxxxx*/
-@media only screen and (max-device-width: 667px) and (orientation: portrait) { 
+/*@media only screen and (max-device-width: 667px) and (orientation: portrait) { 
   #main-title-container:before {
     -webkit-background-size: contain !important;
     -moz-background-size: contain !important;
     -o-background-size: contain !important;
     background-size: contain !important;
-}  
-}
+  }  
+}*/
