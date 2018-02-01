@@ -142,6 +142,10 @@ $(document).ready(function(){
     clear_Results();
     $("#results-main-container").css("display", "inline-block");
     calculate();
+
+    $('html, body').animate({
+        scrollTop: $("#results-main-container").offset().top
+    }, 1500);	  
     
   })
 })
