@@ -98,6 +98,19 @@ function clear_Results(){
 $(document).ready(function(){
 	console.log("hello");
   
+  //button hover
+  $("#calculate-button").hover(
+  	function(){
+    	console.log("hover on");
+      $("#button-text").css("color", "white");
+      $(this).css("background-color", "black");
+    }, function(){
+    	console.log("hover off");
+      $("#button-text").css("color", "black");
+      $(this).css("background-color", "white");
+    });
+  
+  
   $("#calculate-button").click(function(){
   	console.log("hello");
     squatWeight = $("#squat-input-weight").val();
