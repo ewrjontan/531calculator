@@ -1,10 +1,10 @@
 @font-face{ 
-    font-family: 'Great Vibes';
-    src: url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont.eot');
-    src: url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont?#iefix') format('embedded-opentype'),
-	 url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont.woff') format('woff'),
-	 url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont.ttf') format('truetype'),
-	 url('./fonts/great-vibes-font-kit/greatvibes-regular-webfont.svg#webfont') format('svg');
+    font-family: 'NoneShallPass';
+    src: url('./noneshallpassfont/NoneShallPass.eot');
+    src: url('./noneshallpassfont/NoneShallPass?#iefix') format('embedded-opentype'),
+	 url('./noneshallpassfont/NoneShallPass.woff') format('woff'),
+	 url('./noneshallpassfont/NoneShallPass.ttf') format('truetype'),
+	 url('./noneshallpassfont/NoneShallPass.svg#webfont') format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -67,6 +67,7 @@ body{
   position: absolute;
   top:25%;/*was 45%*/
   font-size: 1.5em;
+  font-family: "NoneShallPass";
 }
 
 #main-body-container{
