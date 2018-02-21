@@ -99,7 +99,7 @@ $(document).ready(function(){
 	console.log("hello");
   
   //button hover
-  $("#calculate-button").hover(
+  /*$("#calculate-button").hover(
   	function(){
     	console.log("hover on");
       $("#button-text").css("color", "white");
@@ -108,7 +108,7 @@ $(document).ready(function(){
     	console.log("hover off");
       $("#button-text").css("color", "black");
       $(this).css("background-color", "white");
-    });
+    });*/
   
   
   $("#calculate-button").click(function(){
