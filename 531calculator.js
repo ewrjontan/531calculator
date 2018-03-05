@@ -9,15 +9,15 @@ var ohpReps;
 
 
 function calculate(){
-	var maxSquat = Math.floor(squatWeight/(1.0278-0.0278*squatReps));
+  var maxSquat = Math.floor(squatWeight/(1.0278-0.0278*squatReps));
   var maxBench = Math.floor(benchWeight/(1.0278-0.0278*benchReps));
   var maxDeadlift = Math.floor(deadliftWeight/(1.0278-0.0278*deadliftReps));
   var maxOhp = Math.floor(ohpWeight/(1.0278-0.0278*ohpReps));
   
-  console.log("Max squat: " + maxSquat);
-  console.log("Max Bench: " + maxBench);
-  console.log("Max Dead: " + maxDeadlift);
-  console.log("Max OHP: " + maxOhp);
+  //console.log("Max squat: " + maxSquat);
+  //console.log("Max Bench: " + maxBench);
+  //console.log("Max Dead: " + maxDeadlift);
+  //console.log("Max OHP: " + maxOhp);
   
   //Max lifts
   $("#squat-max-container").append("Squat: " + maxSquat + " lbs");
@@ -31,17 +31,17 @@ function calculate(){
   
   $("#bench-week-one-tr").append("<td>Bench Press</td><td>" + Math.floor(maxBench * .65) + "</td><td>" + Math.floor(maxBench*.75) + "</td><td>" + Math.floor(maxBench*.85) + "</td>");
 
-	$("#deadlift-week-one-tr").append("<td>Deadlift</td><td>" + Math.floor(maxDeadlift * .65) + "</td><td>" + Math.floor(maxDeadlift*.75) + "</td><td>" + Math.floor(maxDeadlift*.85) + "</td>");
+  $("#deadlift-week-one-tr").append("<td>Deadlift</td><td>" + Math.floor(maxDeadlift * .65) + "</td><td>" + Math.floor(maxDeadlift*.75) + "</td><td>" + Math.floor(maxDeadlift*.85) + "</td>");
   
   $("#ohp-week-one-tr").append("<td>Overhead Press</td><td>" + Math.floor(maxOhp * .65) + "</td><td>" + Math.floor(maxOhp*.75) + "</td><td>" + Math.floor(maxOhp*.85) + "</td>");
 
 
-	//Week Two
+  //Week Two
   $("#squat-week-two-tr").append("<td>Squat</td><td>" + Math.floor(maxSquat * .70) + "</td><td>" + Math.floor(maxSquat*.80) + "</td><td>" + Math.floor(maxSquat*.90) + "</td>");
   
   $("#bench-week-two-tr").append("<td>Bench Press</td><td>" + Math.floor(maxBench * .70) + "</td><td>" + Math.floor(maxBench*.80) + "</td><td>" + Math.floor(maxBench*.90) + "</td>");
 
-	$("#deadlift-week-two-tr").append("<td>Deadlift</td><td>" + Math.floor(maxDeadlift * .70) + "</td><td>" + Math.floor(maxDeadlift*.80) + "</td><td>" + Math.floor(maxDeadlift*.90) + "</td>");
+  $("#deadlift-week-two-tr").append("<td>Deadlift</td><td>" + Math.floor(maxDeadlift * .70) + "</td><td>" + Math.floor(maxDeadlift*.80) + "</td><td>" + Math.floor(maxDeadlift*.90) + "</td>");
   
   $("#ohp-week-two-tr").append("<td>Overhead Press</td><td>" + Math.floor(maxOhp * .70) + "</td><td>" + Math.floor(maxOhp*.80) + "</td><td>" + Math.floor(maxOhp*.90) + "</td>");
   
@@ -50,23 +50,23 @@ function calculate(){
   
   $("#bench-week-three-tr").append("<td>Bench Press</td><td>" + Math.floor(maxBench * .75) + "</td><td>" + Math.floor(maxBench*.85) + "</td><td>" + Math.floor(maxBench*.95) + "</td>");
 
-	$("#deadlift-week-three-tr").append("<td>Deadlift</td><td>" + Math.floor(maxDeadlift * .75) + "</td><td>" + Math.floor(maxDeadlift*.85) + "</td><td>" + Math.floor(maxDeadlift*.95) + "</td>");
+  $("#deadlift-week-three-tr").append("<td>Deadlift</td><td>" + Math.floor(maxDeadlift * .75) + "</td><td>" + Math.floor(maxDeadlift*.85) + "</td><td>" + Math.floor(maxDeadlift*.95) + "</td>");
   
   $("#ohp-week-three-tr").append("<td>Overhead Press</td><td>" + Math.floor(maxOhp * .75) + "</td><td>" + Math.floor(maxOhp*.85) + "</td><td>" + Math.floor(maxOhp*.95) + "</td>");
 
-	//Week Four
+  //Week Four
   $("#squat-week-four-tr").append("<td>Squat</td><td>" + Math.floor(maxSquat * .40) + "</td><td>" + Math.floor(maxSquat*.50) + "</td><td>" + Math.floor(maxSquat*.60) + "</td>");
   
   $("#bench-week-four-tr").append("<td>Bench Press</td><td>" + Math.floor(maxBench * .40) + "</td><td>" + Math.floor(maxBench*.50) + "</td><td>" + Math.floor(maxBench*.60) + "</td>");
 
-	$("#deadlift-week-four-tr").append("<td>Deadlift</td><td>" + Math.floor(maxDeadlift * .40) + "</td><td>" + Math.floor(maxDeadlift*.50) + "</td><td>" + Math.floor(maxDeadlift*.60) + "</td>");
+  $("#deadlift-week-four-tr").append("<td>Deadlift</td><td>" + Math.floor(maxDeadlift * .40) + "</td><td>" + Math.floor(maxDeadlift*.50) + "</td><td>" + Math.floor(maxDeadlift*.60) + "</td>");
   
   $("#ohp-week-four-tr").append("<td>Overhead Press</td><td>" + Math.floor(maxOhp * .40) + "</td><td>" + Math.floor(maxOhp*.50) + "</td><td>" + Math.floor(maxOhp*.60) + "</td>");
 	
-}
+};
 
 function clear_Results(){
-	$("#squat-max-container").empty();
+  $("#squat-max-container").empty();
   $("#bench-max-container").empty();
   $("#deadlift-max-container").empty();
   $("#ohp-max-container").empty();
@@ -91,12 +91,11 @@ function clear_Results(){
   $("#deadlift-week-four-tr").empty();
   $("#ohp-week-four-tr").empty();    
      
-}
+};
 
 //calculate();
 
 $(document).ready(function(){
-	console.log("hello");
   
   //button hover
   /*$("#calculate-button").hover(
@@ -112,7 +111,7 @@ $(document).ready(function(){
   
   
   $("#calculate-button").click(function(){
-  	console.log("hello");
+ 
     squatWeight = $("#squat-input-weight").val();
     
     if ($("#squat-input-reps").val() !== ""){
@@ -143,15 +142,9 @@ $(document).ready(function(){
     	ohpReps = $("#ohp-input-reps").val();
     }else{
     	ohpReps = 1;
-    }
+    };
     
-    
-    
-    /*console.log("Squat inputs: " + squatWeight + " " + squatReps);
-    console.log("Bench inputs: " + benchWeight + " " + benchReps);
-    console.log("Dead inputs: " + deadliftWeight + " " + deadliftReps);
-    console.log("ohp inputs: " + ohpWeight + " " + ohpReps);*/
-    
+  
     clear_Results();
     $("#results-main-container").css("display", "inline-block");
     calculate();
